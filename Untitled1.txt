@@ -1,0 +1,46 @@
+function editPrice(){
+	if(event && event.srcElement &&event.srcElement.tagName=="TD"）{
+		var priceTD = event.srcElement;
+		if(priceTD.firstChild&& priceTD.firstChild.nodeType==3)//判断当前priceTD有子节点，而且第一个子节点是文本结点
+
+	textNode对应的是3,ElementNode对应的是1
+		{
+		}
+		//innerText表示设置或者获取当前节点的内部文本
+		var oldPrice = priceTD.innerText;
+		//innerHTML表示设置当前结点的内部HTML
+		priceTD.innerHTML="<input type='text'size='4'/>";
+		// <td><input type='text' size='4;/></td>
+		var input = priceTD.firstChild;
+		if(input.tagName =="INPUT"){
+			input.value = oldPrice;
+			input.select();
+
+		}
+	}
+		}
+		}
+}
+//检验键盘摁下的值的方法
+function ckInput(){
+	var kc = event.keyCode;
+
+
+	if(!((kc>=48 && kc<57
+
+}
+function updataPrice(){
+	if(event && event.srcElement && event.srcElement.tagName=="INPUT"){
+	}
+function showBGcolor(){
+//当鼠标悬浮时，显示背景颜色
+	//event:当前发生的事件
+	event.srcElement;事件源
+	alert(event.srcElement.tagName);
+	if(event&&event.Element&&event.srcElement.tagName=="TD"){
+		var td = event.Element;
+		var tr = td.parentElement;//tr是 td的父元素
+		tr.style.backgroundColor = "navy";
+
+	
+}

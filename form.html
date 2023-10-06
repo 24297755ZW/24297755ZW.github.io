@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <form action="demo04.html"method="post">
+	昵称:<input type="text" name="nickName"/><br/>
+	密码:<input type="password"  name="pwd"/><br/>
+	性别:<input type="radio" name="gender" value="male"/>男
+		<input type="radio" name="gender"value="male"/>女<br/>
+	爱好:<input type="checkbox" name="hobby" value="baseketball"/>篮球
+	<input type="checkbox" name="hobby" value="reading"/>阅读
+	<input type="checkbox" name="hobby" value="music"/>音乐<br/>
+	星座:<select name="star">
+		  <option>白羊座<option/>
+		  <option>天秤座<option/>
+		  <option>双鱼座<option/>
+		  <option>狮子座<option/>
+		  <option>摩羯座<option/>
+		  </select><br/>
+	备注:<textarea name="remark" rows="4" cols="50"></textarea>
+		 <input type="submit" value="注册"/>
+		 <input type="button" value="重置"/>
+		 <input type="button" value="这是一个普通按钮">
+ </form>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  
+ </body>
+</html>
+<!--
+表单 form
+input type="name"表示文本框，其中name属性必须要制定，不然这个文本框的数据将来是不会发给服务器的
+input type="password"密码框
+input type="radio"表示单选按钮
+name属性保持一致，才有互斥的效果
+input type="checkbox"这是复选框，name的数值建议保持一致，这样我们服务器获取数据的时候是一个数组。
+select是下拉列表，每一个选项是option，value是要发给服务器的值，selected表示默认选中的项。
+textarea 表示多行文本框（文本域)它的value值就是开始和结束标签之间的内容
+input type=sumbit 提交按钮
+input type="reset"表示重置按钮
+input type="button"表示一个普通按钮
